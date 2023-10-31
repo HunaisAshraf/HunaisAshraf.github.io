@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -12,7 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script async src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script
+      async
+      src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"
+    ></script>
     <link rel="stylesheet" href="./styles.css" />
     <title>Hunais-Portfolio</title>
   </head>
@@ -22,6 +25,7 @@
       <nav class="navbar">
         <a class="active" href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#education">Education</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
         <a
@@ -36,6 +40,8 @@
       <a href="#home" class="active"><i class="fa-solid fa-house"></i></a>
 
       <a href="#about"><i class="fa-solid fa-user"></i></a>
+
+      <a href="#education"><i class="fa-solid fa-school"></i></a>
 
       <a href="#projects"><i class="fa-brands fa-creative-commons-nd"></i></a>
 
@@ -63,62 +69,32 @@
               <p>Hello,</p>
               <h1>I'm Hunias</h1>
               <p>
-                And I am
+                And I am a
                 <span id="element"></span>
               </p>
             </div>
             <div class="hero-img">
-              <img src="./images/profile.avif" class="pic" alt="" />
+              <img src="./images/profile.webp" class="pic" alt="" />
             </div>
           </div>
-          <!-- <div class="skills">
+          <div class="skills">
             <p>Skills</p>
             <ul class="logo">
-              <li><img src="./images/icons/html.avif" alt="HTML" /></li>
+              <li><img src="./images/icons/htm.svg" alt="HTML" /></li>
               <li>
-                <img
-                  src="./images/icons/file_type_css_icon_130661.png"
-                  alt="CSS"
-                />
+                <img src="./images/icons/css.svg" alt="CSS" />
               </li>
               <li>
-                <img
-                  src="./images/icons/react_original_logo_icon_146374.png"
-                  alt="REACT.JS"
-                />
+                <img src="./images/icons/javascript.svg" alt="JS" />
               </li>
               <li>
-                <img
-                  src="./images/icons/file_type_node_icon_130301.png"
-                  alt="NODE.JS"
-                />
+                <img src="./images/icons/bootstrap.svg" alt="bootstrap" />
               </li>
               <li>
-                <img
-                  src="./images/icons/mongodb_original_wordmark_logo_icon_146425.png"
-                  alt="MongoDB"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/icons/bootstrap_plain_logo_icon_146619.png"
-                  alt="bootstrap"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/icons/file_type_tailwind_icon_130128.png"
-                  alt="Tailwind"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/icons/redux_original_logo_icon_146365.png"
-                  alt="redu"
-                />
+                <img src="./images/icons/java.svg" alt="java" />
               </li>
             </ul>
-          </div> -->
+          </div>
         </div>
       </section>
       <section id="about" class="about">
@@ -126,57 +102,78 @@
           <p>About Me</p>
         </div>
         <div class="about-details">
+          <div class="about-img">
+            <img src="./images/img.webp" alt="my" />
+          </div>
           <div class="about-me">
             <p>
-              I am Full Stack Web developer looking for a good job in a company
-              where I can improve and utilize my skills. I earned knowledge and
-              skills in MERN Stack by learning and doing projects on it.
-              Currently I'm learning the advanced concepts about these
-              technologies and creating projects to gain more experience and
-              knowledge in web development and designing.
+              <span>I'm Hunais</span>, a MERN stack developer with a passion for
+              creating dynamic and responsive web applications. I excel in the
+              entire development cycle, from designing user interfaces with
+              React to implementing server logic with Node.js, and managing
+              databases with MongoDB. With a problem-solving mindset and a
+              commitment to staying up-to-date with the latest technologies, I'm
+              dedicated to delivering cutting-edge web solutions that make an
+              impact.
             </p>
-          </div>
-          <div class="education">
-            <div class="edu">
-              <h2>MERN Stack Development</h2>
-              <p>July 2022 - February 2023</p>
-              <p>Jspider Training Institute</p>
-              <p>Bengaluru, Karnataka.</p>
-            </div>
-            <div class="edu">
-              <h2>Bachelors in computer Application</h2>
-              <p>2019 - 2022</p>
-              <p>Bharathiar University</p>
-              <p>Gudalur, TamilNadu.</p>
-            </div>
           </div>
         </div>
       </section>
-      <!-- <section id="projects" class="projects">
+      <section id="education" class="education">
+        <div class="education-head">
+          <p>Education</p>
+        </div>
+        <div class="education-details">
+          <div class="edu">
+            <h2>Bachelors in computer Application</h2>
+            <p>2019 - 2022</p>
+            <p>Bharathiar University</p>
+            <p>Gudalur, TamilNadu.</p>
+          </div>
+          <div class="edu">
+            <h2>Bachelors in computer Application</h2>
+            <p>2019 - 2022</p>
+            <p>Bharathiar University</p>
+            <p>Gudalur, TamilNadu.</p>
+          </div>
+          <div class="edu">
+            <h2>Bachelors in computer Application</h2>
+            <p>2019 - 2022</p>
+            <p>Bharathiar University</p>
+            <p>Gudalur, TamilNadu.</p>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="projects">
         <div class="project-head">
           <p>Projects</p>
         </div>
         <div class="project">
           <div class="project-img">
-            <a href="https://aech-shop.netlify.app" target="_blank"
-              ><img src="./images/project-1.png" alt="aech"
+            <a
+              href="https://hunaisashraf.github.io/BookMyShow-Clone/"
+              target="_blank"
+              ><img src="./images/project/book.webp" alt="aech"
             /></a>
           </div>
           <div class="project-det">
-            <h1>Aech-Shop</h1>
+            <h1>Book My Show Clone</h1>
             <p>
-              E-Commerce platform, enriched with essential functionalities like
-              product listing, cart management, and order processing.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae hic animi, a magni, temporibus facere nobis quos
+              debitis incidunt sit laborum nisi consectetur oriosam quas!
             </p>
-            <span>REACT</span>
-            <span>NODE</span>
+            <span>HTML</span>
+            <span>Bootstrap</span>
             <div class="project-link">
               <a
-                href="https://github.com/HunaisAshraf/Aech-shop.git"
+                href="https://github.com/HunaisAshraf/BookMyShow-Clone.git"
                 target="_blank"
                 >Code <i class="fa-brands fa-square-github"></i
               ></a>
-              <a href="https://aech-shop.netlify.app" target="_blank"
+              <a
+                href="https://hunaisashraf.github.io/BookMyShow-Clone/"
+                target="_blank"
                 >Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
@@ -184,77 +181,62 @@
         </div>
         <div class="project">
           <div class="project-det">
-            <h1>Youtube Clone</h1>
+            <h1>Brototype Clone</h1>
             <p>
-              YouTube Clone powered by React.js, Tailwind CSS, Redux and Youtube
-              API.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis,
+              iusto unde? Repudiandae, laboriosam officia. Quaerat quidem
+              perspiciatis laborum cum omnis dolor amet quo, iusto ipsam
+              tenetur, minima molestias vitae quos.
             </p>
-            <span>REACT</span>
-            <span>Tailwind</span>
+            <span>Html</span>
+            <span>Css</span>
             <div class="project-link">
               <a
-                href="https://github.com/HunaisAshraf/youtubeclone"
+                href="https://github.com/HunaisAshraf/brototype-clone.git"
                 target="_blank"
                 >Code <i class="fa-brands fa-square-github"></i
               ></a>
-              <a href="https://hu-tube.netlify.app" target="_blank"
+              <a
+                href="https://hunaisashraf.github.io/brototype-clone/"
+                target="_blank"
                 >Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
           </div>
           <div class="project-img">
-            <a href="https://hu-tube.netlify.app" target="_blank"
-              ><img src="./images/youtube.png" alt="youtube"
+            <a
+              href="https://hunaisashraf.github.io/brototype-clone/"
+              target="_blank"
+              ><img src="./images/project/broto.webp" alt="youtube"
             /></a>
           </div>
         </div>
         <div class="project">
           <div class="project-img">
             <a href="https://h-weather-app.netlify.app" target="_blank"
-              ><img src="./images/weather.png" alt="aech"
+              ><img src="./images/project/typing.webp" alt="aech"
             /></a>
           </div>
           <div class="project-det">
-            <h1>Weather App</h1>
+            <h1>Typing Club</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             <span>HTML</span>
             <span>CSS</span>
             <div class="project-link">
               <a
-                href="https://github.com/HunaisAshraf/weather-app.git"
+                href="https://github.com/HunaisAshraf/typing-clone.git"
                 target="_blank"
                 >Code <i class="fa-brands fa-square-github"></i
               ></a>
-              <a href="https://h-weather-app.netlify.app" target="_blank"
-                >Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <div class="project-det">
-            <h1>Quiz</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <span>HTML</span>
-            <span>CSS</span>
-            <div class="project-link">
               <a
-                href="https://github.com/HunaisAshraf/Quiz-App.git"
+                href="https://hunaisashraf.github.io/typing-clone/"
                 target="_blank"
-                >Code <i class="fa-brands fa-square-github"></i
-              ></a>
-              <a href="https://hunaisashraf.github.io/Quiz-App/" target="_blank"
                 >Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
           </div>
-          <div class="project-img">
-            <a href="https://hunaisashraf.github.io/Quiz-App/" target="_blank"
-              ><img src="./images/quiz.png" alt="aech"
-            /></a>
-          </div>
         </div>
-      </section> -->
+      </section>
       <section class="contact" id="contact">
         <div class="contact-head">
           <p>Contact</p>
@@ -287,6 +269,21 @@
             </div>
           </div>
         </div>
+        <form class="form" action="">
+          <div class="form-head">
+            <h1>Text me</h1>
+          </div>
+          <input placeholder="Your Name" type="text" />
+          <input placeholder="Your Email" type="email" />
+          <textarea
+            placeholder="Your Message"
+            name=""
+            id=""
+            cols="20"
+            rows="7"
+          ></textarea>
+          <button type="submit" class="form-btn">Submit</button>
+        </form>
       </section>
     </main>
     <footer>
@@ -294,6 +291,5 @@
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./index.js"></script>
-
   </body>
 </html>

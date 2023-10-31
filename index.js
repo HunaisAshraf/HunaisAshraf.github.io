@@ -11,15 +11,15 @@ ScrollReveal({
   duration: 1000,
   delay: 100,
 });
-ScrollReveal().reveal(".hero,.hero-link,.abt-head,.project-head", {
+ScrollReveal().reveal(".hero,.hero-link,.abt-head,.project-head,.contact", {
   origin: "top",
 });
-ScrollReveal().reveal(".skills,.contact", { origin: "bottom" });
+ScrollReveal().reveal(".skills", { origin: "bottom" });
 ScrollReveal().reveal(
-  ".about,.about-me,.education,.contact form,.projects h3",
+  ".about,.about-me,.education,.contact form,.aboout-img,.projects h3",
   { origin: "left" }
 );
-ScrollReveal().reveal(".project", { origin: "right" });
+ScrollReveal().reveal(".education,.project", { origin: "right" });
 
 // active link
 
