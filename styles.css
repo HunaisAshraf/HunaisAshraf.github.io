@@ -27,8 +27,7 @@ a {
 .abt-head,
 .education-head,
 .project-head,
-.contact-head,
-.form-head {
+.contact-head {
   text-align: center;
   font-size: 3rem;
   font-weight: 600;
@@ -378,6 +377,9 @@ nav a.active {
   color: #ffffff;
   background-color: #5a9786;
   box-shadow: #5a9786 0px 1px 5px 0px;
+}
+.form-head {
+  font-size: 2rem;
 }
 
 footer {
