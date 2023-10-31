@@ -55,3 +55,24 @@ window.onscroll = () => {
 };
 
 
+
+
+$("#form").submit((e)=>{
+  e.preventDefault()
+  $.ajax({
+      url:"https://script.google.com/macros/s/AKfycbyGHioNTDqi0AIoIx0mySzKJsKMc-pTzpC5W_x4caWhDf3KTPWIfuDu9BT9F_-iAvCt/exec",
+      data:$("#form").serialize(),
+      method:"post",
+      success:function (response){
+          alert("Form submitted successfully")
+          window.location.reload()
+          //window.location.href="https://google.com"
+      },
+      error:function (err){
+          alert("Something Error")
+
+      }
+  })
+})
+
+
