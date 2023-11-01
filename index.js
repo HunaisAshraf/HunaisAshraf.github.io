@@ -55,24 +55,89 @@ window.onscroll = () => {
 };
 
 
+// form submit
 
+const form = document.getElementById("form");
+const userName = document.getElementById("name");
+const userEmail = document.getElementById("email");
+const userMessage = document.getElementById("message");
 
-$("#form").submit((e)=>{
-  e.preventDefault()
-  $.ajax({
-      url:"https://script.google.com/macros/s/AKfycbyGHioNTDqi0AIoIx0mySzKJsKMc-pTzpC5W_x4caWhDf3KTPWIfuDu9BT9F_-iAvCt/exec",
-      data:$("#form").serialize(),
-      method:"post",
-      success:function (response){
-          alert("Form submitted successfully")
-          window.location.reload()
-          //window.location.href="https://google.com"
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let valid = validateInput();
+
+  if (valid) {
+    $.ajax({
+      url: "https://script.google.com/macros/s/AKfycbxdl0k9eiL0upcRDz--qSP8TxG8rwK9lyF1EQ9PqE44FbXYorIQ2AgD76zNq-2WOP4/exec",
+      data: $("#form").serialize(),
+      method: "post",
+      success: function (response) {
+        alert("Form submitted successfully");
+        window.location.reload();
+        FormData.clear();
       },
-      error:function (err){
-          alert("Something Error")
+      error: function (err) {
+        alert("Something Error");
+      },
+    });
+  }
+});
 
-      }
-  })
-})
+function validateInput() {
+  const userNameVal = userName.value.trim();
+  const userEmailVal = userEmail.value.trim();
+  const userMessageVal = userMessage.value.trim();
 
+  let success = true;
 
+  if (userNameVal === "") {
+    setError(userName, "Username required");
+    success = false;
+  } else {
+    setSuccess(userName);
+  }
+
+  if (userEmailVal === "") {
+    setError(userEmail, "Email is required");
+    success = false;
+  } else if (!validateEmail(userEmailVal)) {
+    setError(userEmail, "Please enter valid email");
+    success = false;
+  } else {
+    setSuccess(userEmail);
+  }
+
+  if (userMessageVal === "") {
+    setError(userMessage, "Message is required");
+    success = false;
+  } else {
+    setSuccess(userMessage);
+  }
+
+  return success;
+}
+
+function setError(element, message) {
+  const inputGroup = element.parentElement;
+  const errorElement = inputGroup.querySelector(".error");
+
+  errorElement.innerText = message;
+  inputGroup.classList.add("error");
+}
+function setSuccess(element) {
+  const inputGroup = element.parentElement;
+  const errorElement = inputGroup.querySelector(".error");
+
+  errorElement.innerText = "";
+  inputGroup.classList.add("success");
+  inputGroup.classList.remove("error");
+}
+
+const validateEmail = (email) => {
+  return String(email)
+    .toLowerCase()
+    .match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+};

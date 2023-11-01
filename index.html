@@ -55,9 +55,7 @@
         <div class="home-container">
           <div class="hero">
             <div class="hero-link">
-              <a
-                href="https://www.linkedin.com/in/hunais"
-                target="_blank"
+              <a href="https://www.linkedin.com/in/hunais" target="_blank"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
               <a href="https://github.com/HunaisAshraf" target="_blank"
@@ -271,20 +269,41 @@
             </div>
           </div>
         </div>
-        <form id="form" class="form" action="">
+        <form id="form" role="form" class="form" action="">
           <div class="form-head">
             <h1>Text me</h1>
           </div>
-          <input placeholder="Your Name" type="text" />
-          <input placeholder="Your Email" type="email" />
-          <textarea
-            placeholder="Your Message"
-            name=""
-            id=""
-            cols="20"
-            rows="7"
-          ></textarea>
-          <button type="submit" class="form-btn">Submit</button>
+          <div class="input-group">
+            <input
+              name="name"
+              id="name"
+              autocomplete="off"
+              placeholder="Your Name"
+              type="text"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-group">
+            <input
+              name="email"
+              id="email"
+              autocomplete="off"
+              placeholder="Your Email"
+              type="text"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-group">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your Message"
+              cols="20"
+              rows="7"
+            ></textarea>
+            <div class="error"></div>
+          </div>
+          <button type="submit" value="Submit" class="form-btn">Submit</button>
         </form>
       </section>
     </main>
